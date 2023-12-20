@@ -18,7 +18,7 @@ const FirstPage = () => {
       <Header>
         <MainLogo>Testing App</MainLogo>
         <FormHeader handleSubmit={handleSubmit} />
-        {error.message.length > 0 && <MyError message={error.message} />}
+        {error && error.message.length > 0 && <MyError message={error.message} />}
       </Header>
       <Main>First greeting page!</Main>
     </div>

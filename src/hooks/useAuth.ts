@@ -69,7 +69,7 @@ const useAuth = () => {
         const response = await axios({
           method: "get",
           url: "/private/me",
-          baseURL: "http://localhost:7070",
+          baseURL: BASE_URL,
           headers: {
             Authorization: `Bearer ${token.token}`,
           },
