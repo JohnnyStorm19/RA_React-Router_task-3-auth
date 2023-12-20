@@ -1,0 +1,15 @@
+.loggedInToolbar {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.avatarImg {
+    border-radius: 50%;
+}
+
+.logoutBtn {
+    border: 2px solid crimson;
+    background-color: transparent;
+    color: crimson;
+}

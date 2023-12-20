@@ -1,0 +1,11 @@
+.imgContainer {
+    max-width: 100%;
+    width: 640px;
+    height: 480px;
+    background-color: gray;
+    background-image: url('https://placehold.co/640x480?text=Image+is+Loading');
+}
+
+.cardContent {
+    max-width: 640px;
+}

@@ -1,0 +1,38 @@
+.newsCard_container {
+    padding-block: 1rem;
+}
+
+.img_container {
+  margin: 0 auto;
+  background-image: url("https://placehold.co/640x480?text=Image+is+Loading");
+  background-repeat: no-repeat;
+  max-width: fit-content;
+}
+.newsCard_img {
+  max-width: 100%;
+}
+.newsCard_title,
+.newsCard_content {
+  display: block;
+}
+.newsCard_title,
+.newsCard_content {
+  text-align: center;
+}
+
+.link__back {
+  width: 40px;
+  height: 30px;
+  background-image: url("../../assets/left-arrow-svgrepo-com.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  position: absolute;
+  top: 1rem;
+  transition: all 0.2s;
+}
+
+.link__back:hover {
+  transform: scale(1.1);
+}
