@@ -1,5 +1,6 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
+import { BASE_URL } from "../globals";
 
 export const useFetchNews = (token: { token: string }) => {
   const [newsData, setNewsData] = useState([]);
@@ -15,7 +16,7 @@ export const useFetchNews = (token: { token: string }) => {
         const response = await axios({
           method: "get",
           url: "/private/news",
-          baseURL: "http://localhost:7070",
+          baseURL: BASE_URL,
           headers: {
             Authorization: `Bearer ${token.token}`,
           },

@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { ISubmittedUserInfo } from "../models";
 import axios from "axios";
+import { BASE_URL } from "../globals";
 
 const useAuth = () => {
   const [authData, setAuthData] = useState({ login: "", password: "" });
@@ -39,7 +40,7 @@ const useAuth = () => {
         const response = await axios({
           method: "post",
           url: "/auth",
-          baseURL: "http://localhost:7070",
+          baseURL: BASE_URL,
           data: authData,
         });
 

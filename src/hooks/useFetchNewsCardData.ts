@@ -1,6 +1,7 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 import { INews } from "../models";
+import { BASE_URL } from "../globals";
 
 export const useFetchNewsCardData = (token: { token: string }, id: string) => {
   const [newsCardData, setNewsCardData] = useState<INews | null>(null);
@@ -16,7 +17,7 @@ export const useFetchNewsCardData = (token: { token: string }, id: string) => {
         const response = await axios({
           method: "get",
           url: `/private/news/${id}`,
-          baseURL: "http://localhost:7070",
+          baseURL: BASE_URL,
           headers: {
             Authorization: `Bearer ${token.token}`,
           },
